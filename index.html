@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matchstick Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Matchstick Game</h1>
+      <div id="gameStatus">Starting game...</div>
+      <div id="message">Press "Start Game" to begin.</div>
+      <button id="startButton" onclick="startGame()">Start Game</button>
+      <div id="playerInput">
+        <input type="number" id="matchesToRemove" min="1" max="6" placeholder="Enter number of matches" />
+        <button onclick="makeMove()">Submit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
